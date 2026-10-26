@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Casing iPhone 17 Pro Max</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi Brand -->
+    <header>
+        <h1>Katalog Casing iPhone 17 Pro Max</h1>
+        <p>Pilih brand favorit Anda untuk melihat koleksi eksklusif</p>
+        
+        <div class="brand-container">
+            <!-- Logo 1: Interaktif (Bisa diklik untuk muncul Detail Brand) -->
+            <div class="brand-card interactive" id="brand-spigen">
+                <img src="img/logo1.jpg" alt="Spigen Logo" class="brand-logo">
+                <span>Spigen (Klik untuk  Detail)</span>
+            </div>
+
+            <!-- Logo 2 -->
+            <div class="brand-card">
+                <img src="img/logo2.jpg" alt="Casetify Logo" class="brand-logo">
+                <span>Lacoste</span>
+            </div>
+
+            <!-- Logo 3 -->
+            <div class="brand-card">
+                <img src="img/logo3.webp" alt="UAG Logo" class="brand-logo">
+               
+                <span>RIMOWA</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Grid Katalog 9 Casing -->
+    <main class="catalog-container">
+        <h2>Koleksi Terbaru</h2>
+        <div class="product-grid">
+
+            <!-- Card Produk 1 - 9 -->
+            <div class="product-card" onclick="openProductModal('Spigen Ultra Hybrid', 'Perlindungan maksimal dengan desain transparan jernih.', 'Rp 350.000', 'img/case1.jpg')">
+                <img src="img/case1.jpg" alt="Casing 1">
+                <h3>Spigen Ultra Hybrid</h3>
+                <p class="price">Rp 350.000</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+
+            <div class="product-card" onclick="openProductModal('Spigen Tough Armor', 'Dilengkapi dengan foam pelindung benturan ekstra keras.', 'Rp 450.000', 'img/case2.jpg')">
+                <img src="img/case2.jpg" alt="Casing 2">
+                <h3>Spigen Tough Armor</h3>
+                <p class="price">Rp 450.000</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+
+            <div class="product-card" onclick="openProductModal('Spigen MagArmor', 'Desain slim dengan dukungan Magsafe super kuat.', 'Rp 400.000', 'img/case3.jpg')">
+                <img src="img/case3.jpg" alt="Casing 3">
+                <h3>Spigen MagArmor</h3>
+                <p class="price">Rp 400.000</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+
+            <div class="product-card" onclick="openProductModal('Casetify Impact Case', 'Bahan eco-friendly tahan jatuh hingga 2.5 meter.', 'Rp 750.000', 'img/case4.webp')">
+                <img src="img/case4.webp" alt="Casing 4">
+                <h3>Casetify Impact Case</h3>
+                <p class="price">Rp 750.000</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+
+            <div class="product-card" onclick="openProductModal('Casetify Ultra Impact', 'Perlindungan sudut ekstra tebal untuk kondisi ekstrem.', 'Rp 850.000', 'img/case5.webp')">
+                <img src="img/case5.webp" alt="Casing 5">
+                <h3>Casetify Ultra Impact</h3>
+                <p class="price">Rp 850.000</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+
+            <div class="product-card" onclick="openProductModal('Casetify Mirror Case', 'Casing bergaya cermin trendi dengan perlindungan baik.', 'Rp 700.000', 'img/case6.webp')">
+                <img src="img/case6.webp" alt="Casing 6">
+                <h3>Casetify Mirror Case</h3>
+                <p class="price">Rp 700.000</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+
+            <div class="product-card" onclick="openProductModal('UAG Monarch Kevlar', 'Casing standar militer dengan bahan serat Kevlar asli.', 'Rp 950.000', 'img/case7.jpg')">
+                <img src="img/case7.jpg" alt="Casing 7">
+                <h3>Rimowa Aluminum Case for iPhone 17 Pro Max</h3>
+                <p class="price">Rp 2.884.000</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+
+            <div class="product-card" onclick="openProductModal('UAG Pathfinder MagSafe', 'Tampilan tumpul yang tangguh dan mendukung pengisian Magsafe.', 'Rp 650.000', 'img/case8.jpg')">
+                <img src="img/case8.jpg" alt="Casing 8">
+                <h3>iPhone 17 Pro Max MagSafe Case Ballerina Pink (PO JEPANG)</h3>
+                <p class="price">Rp 4.000.000</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+
+            <div class="product-card" onclick="openProductModal('UAG Plasma Series', 'Desain semi-transparan dengan struktur pelindung sarang lebah.', 'Rp 600.000', 'img/case9.jpg')">
+                <img src="img/case9.jpg" alt="Casing 9">
+                <h3>Rimowa Alumunium iPhone 17 Pro Max Case - Silver</h3>
+                <p class="price">Rp 2.060.000
+</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal Popup Detail Brand -->
+    <div id="brand-modal" class="modal">
+        <div class="modal-content">
+        
+            <span class="close-btn" id="close-brand">&times;</span>
+            <h2>Tentang Spigen Official</h2>
+            <img src="img/logo1.jpg" alt="Logo Spigen" class="brand-logo">
+            <p><strong>Negara Asal:</strong> Korea Selatan / USA</p>
+            <p>Spigen adalah salah satu produsen aksesoris smartphone terkemuka di dunia. Casing Spigen untuk iPhone 17 Pro Max dirancang khusus dengan teknologi <em>Air Cushion Technology</em> untuk melindungi smartphone Anda dari benturan keras.</p>
+        </div>
+    </div>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-product">&times;</span>
+            <div class="image-container">
+                <img id="modal-img" class="product-img" src="" alt="Gambar produk">
+            </div>
+            <h2 id="modal-title" class="product-title"></h2>
+            <p id="modal-desc" class="product-desc"></p>
+            <p id="modal-price" class="product-price"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
